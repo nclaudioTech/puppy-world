@@ -1,0 +1,126 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    background: #fff;
+    color: black;
+}
+
+.nav-item a:hover {
+  color: #e17cde !important;
+}
+
+
+.main-img img, .images img {
+  width: 100%;
+}
+
+.images {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+}
+
+.banner {
+    width: 100%;
+}
+
+.top-nav {
+    border-bottom: #e17cde 3px solid;
+    opacity: .9;
+    margin-top: 0;
+    width: 100%;
+}
+
+.bottom-nav {
+    border-top: #e17cde 3px solid;
+    opacity: .9;
+    margin-top: 2em;
+    width: 100%;
+}
+
+.bottom-nav ul {
+    clear: both;
+    float: center;
+}
+
+
+.jumbotron {
+  display: none;
+}
+
+
+
+.feature-header {
+  font-weight: 400;
+  width: 100%;
+}
+
+/****** Puppy Page ******/
+
+#puppies {
+    background-color: #2e2d2e;
+    color: #fff;
+}
+
+h5 {
+  font-weight: 400;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.thumbails {
+  padding-right: -15px;
+}
+
+   .thumbnails a {
+  float: left;
+  width: 100%;
+  padding-right: 15px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+
+.thumbnails img {
+  display: block;
+  transition: all .2s ease-in-out;
+  width: 100%;
+}
+
+.thumbnails:hover img {
+  opacity: .6;
+  transform: scale(.92);
+}
+
+.thumbnails img:hover {
+  opacity: 1;
+  transform: scale(1) rotate(2deg);
+  box-shadow: 0 0 7px rgba(0, 0, 0, .5);
+}
+
+@media all and (min-width: 600px) {
+  .jumbotron {
+    display: block;
+    background: url(../images/yorkterrier.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 500px;
+  }
+    .thumbnails a {
+      width: 50%;
+    }
+}
+
+@media (min-width: 769px) {
+    .thumbnails a {
+  width:30%;
+  padding-right: 15px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+}

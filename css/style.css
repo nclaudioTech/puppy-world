@@ -7,11 +7,6 @@ body {
     color: black;
 }
 
-.nav-item a:hover {
-  color: #e17cde !important;
-}
-
-
 .main-img img, .images img {
   width: 100%;
 }
@@ -25,6 +20,8 @@ body {
 .banner {
     width: 100%;
 }
+
+/* ************* Navbars ************* */
 
 .top-nav {
     border-bottom: #e17cde 3px solid;
@@ -44,7 +41,11 @@ body {
     clear: both;
     float: center;
 }
+.nav-item a:hover {
+  color: #e17cde !important;
+}
 
+/* ************* Jumbo */
 
 .jumbotron {
   display: none;
@@ -101,6 +102,8 @@ img {
   transform: scale(1) rotate(2deg);
   box-shadow: 0 0 7px rgba(0, 0, 0, .5);
 }
+
+/* ************* Media Queries ************* */
 
 @media all and (min-width: 600px) {
   .jumbotron {
